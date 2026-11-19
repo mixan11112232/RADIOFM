@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Целуйка ФМ</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="age-gate" id="ageGate">
+    <div class="age-box">
+      <div class="age-logo">16+</div>
+      <h2>Вам есть 16 лет?</h2>
+      <p>Сайт содержит музыку, которая может не подходить для лиц младше 16 лет.</p>
+      <div class="age-buttons">
+        <button id="ageYes">Да, мне есть 16</button>
+        <button id="ageNo">Нет, мне меньше</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logo">РАДИО<br><span>ЦЕЛУЙКА</span><span class="fm">ФМ</span></div>
+  </header>
+
+  <div class="city-bar">
+    <div class="city-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+    </div>
+    <div class="city-text">Волна топовой<br>музыки</div>
+    <div class="live-city">
+      <div class="red-dot"></div>
+      <span>103,7 Минск</span>
+    </div>
+  </div>
+
+  <main class="main-card">
+    <div class="live-badge">В ЭФИРЕ</div>
+    <h1 class="track-title">Целуйка ФМ</h1>
+    <div class="track-subtitle">Прямой эфир</div>
+
+    <div class="cover-container">
+      <div class="cover-art">
+        <div class="track-name-bg">ЦЕЛУЙКА</div>
+      </div>
+      <button id="playBtn" class="play-btn">
+        <span id="playIcon">▶</span>
+      </button>
+    </div>
+
+    <div class="brand-footer">
+      <p>Волна топовой музыки!</p>
+      <span>Радио Целуйка ФМ</span>
+    </div>
+  </main>
+
+  <!-- Скрытое меню тестов (на всякий случай) -->
+  <nav class="bottom-nav">
+    <div class="nav-item active">
+      <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+    </div>
+  </nav>
+
+  <audio id="audio" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
